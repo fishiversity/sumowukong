@@ -32,9 +32,9 @@ basic.forever(function () {
         stop()
         basic.pause(1000)
         turnLeft()
-        basic.pause(1000)
+        basic.pause(500)
         stop()
-    } else {
+        basic.pause(1000)
         goForward()
     }
 })
