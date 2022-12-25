@@ -7,9 +7,15 @@ function goForward () {
 function stop () {
     wuKong.stopAllMotor()
 }
+input.onButtonPressed(Button.A, function () {
+    basic.pause(5000)
+})
 function turnRight () {
     wuKong.setAllMotor(-80, 80)
 }
+input.onButtonPressed(Button.AB, function () {
+    wuKong.stopAllMotor()
+})
 basic.showIcon(IconNames.Happy)
 pins.setPull(DigitalPin.P1, PinPullMode.PullUp)
 pins.setPull(DigitalPin.P2, PinPullMode.PullUp)
